@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name teensy-eurorack)(type Legacy)(uri ${KIPRJMOD}/teensy-eurorack.lib)(options "")(descr ""))
+)
