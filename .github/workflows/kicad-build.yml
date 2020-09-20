@@ -74,3 +74,61 @@ jobs:
           exit 1
         fi
 
+
+  uSD_extender_male:
+    runs-on: ubuntu-latest
+    name: build-uSDAdapter-artifact
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: package schematic and pcbs
+      id: hello
+      uses: newdigate/kicad-github-action@v1.0.8
+      with:
+        kicad-project-path: "hardware/boards"
+        kicad-schematic-filename: "uSD_extender_male.sch"
+        kicad-board-filename: "uSD_extender_male.kicad_pcb"
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: uSD_extender_male-artifact
+        path: output
+    - name: Check the output for success or error
+      run: |
+        echo "Build result: ${{ steps.hello.outputs.message }}"
+        if [[ ${{ steps.hello.outputs.success }} != 1 ]]; then
+          echo "Build failed: ERC or DRC had errors"
+          exit 1
+        fi
+
+  front-panel:
+    runs-on: ubuntu-latest
+    name: build-front-panel-artifact
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: package schematic and pcbs
+      id: hello
+      uses: newdigate/kicad-github-action@v1.0.8
+      with:
+        kicad-project-path: "hardware/front-panel"
+        kicad-schematic-filename: "front-panel.sch"
+        kicad-board-filename: "front-panel.kicad_pcb"
+    # Use the output from the `hello` step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: upload artifacts
+      uses: actions/upload-artifact@v1
+      with:
+        name: front-panel-artifact
+        path: output
+    - name: Check the output for success or error
+      run: |
+        echo "Build result: ${{ steps.hello.outputs.message }}"
+        if [[ ${{ steps.hello.outputs.success }} != 1 ]]; then
+          echo "Build failed: ERC or DRC had errors"
+          exit 1
+        fi
