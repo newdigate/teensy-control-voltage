@@ -12,6 +12,11 @@
 
 extend a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") with peripherals to interface with eurorack modular equipment. 
 
+<img src='docs/front-view.png' width='250px'/> <img src='docs/back-view.png' width='250px'/> 
+
+<img src='docs/teensy-eurorack.svg' width='800px'/>
+<img src='docs/teensy-eurorack-breakout.svg' width='800px'/>
+
 ## specifications
 * **microcontrollers:** 
   * 600 Mhz ARM cortex m7 ( [teensy 4.1 board](https://www.pjrc.com/store/teensy41.html "teensy 4.1 board") )
