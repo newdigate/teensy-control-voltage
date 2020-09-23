@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L teensy-eurorack:Teensy4.1_tht U4
-U 1 1 5ECE9695
-P 8800 3100
-F 0 "U4" H 8800 5665 50  0000 C CNN
-F 1 "Teensy4.1" H 8800 5574 50  0000 C CNN
-F 2 "footprints:Teensy41_tht" H 8400 3500 50  0001 C CNN
-F 3 "" H 8400 3500 50  0001 C CNN
-	1    8800 3100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR044
 U 1 1 5ED8F475
 P 7200 950
@@ -299,10 +288,6 @@ NoConn ~ 7700 2050
 NoConn ~ 7700 2250
 NoConn ~ 7700 2450
 NoConn ~ 7700 2550
-NoConn ~ 7700 2850
-NoConn ~ 7700 2950
-NoConn ~ 7700 3050
-NoConn ~ 7700 1450
 $Comp
 L power:GND #PWR082
 U 1 1 5EE4ECA5
@@ -1767,17 +1752,6 @@ Wire Wire Line
 Wire Wire Line
 	850  3750 1200 3750
 $Comp
-L Device:R R1
-U 1 1 5F517C04
-P 700 3150
-F 0 "R1" H 700 3000 50  0000 L CNN
-F 1 "4.7k" V 700 3050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 630 3150 50  0001 C CNN
-F 3 "~" H 700 3150 50  0001 C CNN
-	1    700  3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 5F5296C2
 P 550 3150
@@ -2092,14 +2066,53 @@ Wire Wire Line
 	1000 3000 850  3000
 Connection ~ 850  3000
 Wire Wire Line
-	700  3000 850  3000
-Wire Wire Line
-	550  3000 700  3000
-Connection ~ 700  3000
-Wire Wire Line
-	700  3300 700  3950
+	550  3300 550  4050
 Wire Wire Line
 	700  3950 1200 3950
 Wire Wire Line
-	550  3300 550  4050
+	700  3300 700  3950
+Wire Wire Line
+	550  3000 700  3000
+Wire Wire Line
+	700  3000 850  3000
+Connection ~ 700  3000
+$Comp
+L Device:R R1
+U 1 1 5F517C04
+P 700 3150
+F 0 "R1" H 700 3000 50  0000 L CNN
+F 1 "4.7k" V 700 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 630 3150 50  0001 C CNN
+F 3 "~" H 700 3150 50  0001 C CNN
+	1    700  3150
+	1    0    0    -1  
+$EndComp
+Text Label 700  3950 0    49   ~ 0
+ADC_RESET
+$Comp
+L teensy-eurorack:Teensy4.1_tht U4
+U 1 1 5ECE9695
+P 8800 3100
+F 0 "U4" H 8800 5665 50  0000 C CNN
+F 1 "Teensy4.1" H 8800 5574 50  0000 C CNN
+F 2 "footprints:Teensy41_tht" H 8400 3500 50  0001 C CNN
+F 3 "" H 8400 3500 50  0001 C CNN
+	1    8800 3100
+	1    0    0    -1  
+$EndComp
+Text Label 7700 1450 2    49   ~ 0
+ADC_RESET
+NoConn ~ 5750 6600
+NoConn ~ 5750 6700
+NoConn ~ 5750 6800
+NoConn ~ 5750 6900
+NoConn ~ 5800 7250
+NoConn ~ 5800 7350
+NoConn ~ 5800 7450
+Text Label 7700 2850 2    49   ~ 0
+ENC1A
+Text Label 7700 2950 2    49   ~ 0
+ENC1B
+Text Label 7700 3050 2    49   ~ 0
+ENC1SW
 $EndSCHEMATC
