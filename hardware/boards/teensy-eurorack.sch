@@ -2087,8 +2087,8 @@ L Connector_Generic:Conn_01x03 J3
 U 1 1 5F865698
 P 8400 4450
 F 0 "J3" V 8272 4262 50  0000 R CNN
-F 1 "Conn_01x02" V 8363 4262 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4450 50  0001 C CNN
+F 1 "Conn_01x03" V 8363 4262 50  0001 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8400 4450 50  0001 C CNN
 F 3 "~" H 8400 4450 50  0001 C CNN
 	1    8400 4450
 	-1   0    0    -1  
@@ -2098,8 +2098,8 @@ L Connector_Generic:Conn_01x03 J1
 U 1 1 5F866946
 P 7700 4450
 F 0 "J1" V 7572 4262 50  0000 R CNN
-F 1 "Conn_01x02" V 7663 4262 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7700 4450 50  0001 C CNN
+F 1 "Conn_01x03" V 7663 4262 50  0001 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7700 4450 50  0001 C CNN
 F 3 "~" H 7700 4450 50  0001 C CNN
 	1    7700 4450
 	-1   0    0    -1  
@@ -2122,7 +2122,7 @@ U 1 1 5F88EBDB
 P 8400 3800
 F 0 "J2" V 8272 3612 50  0000 R CNN
 F 1 "Conn_01x02" V 8363 3612 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 3800 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8400 3800 50  0001 C CNN
 F 3 "~" H 8400 3800 50  0001 C CNN
 	1    8400 3800
 	-1   0    0    -1  
