@@ -75,15 +75,11 @@ Text Label 7700 1250 2    49   ~ 0
 TFT_DC
 Text Label 7700 1650 2    49   ~ 0
 TFT_CS
-Text Label 7700 2750 2    49   ~ 0
-DAC_SCK
 Text Label 7700 2650 2    49   ~ 0
 DAC_SDIN
-Text Label 9900 3150 0    49   ~ 0
+Text Label 8600 4450 0    49   ~ 0
 ADC_MISO
-Text Label 9900 2850 0    49   ~ 0
-ADC_SCK
-Text Label 9900 2950 0    49   ~ 0
+Text Label 9950 2950 0    49   ~ 0
 ADC_CS
 Text Label 7700 1050 2    49   ~ 0
 MIDI_RX
@@ -95,10 +91,8 @@ Text Label 7700 1350 2    49   ~ 0
 ADC_BUSY
 Text Label 7700 1550 2    49   ~ 0
 ADC_CONVST
-Text Label 9900 1950 0    49   ~ 0
+Text Label 9950 2750 0    49   ~ 0
 DAC_SYNC
-Text Label 9900 2450 0    49   ~ 0
-DAC_SDOUT
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J28
 U 1 1 5EE93454
@@ -268,12 +262,6 @@ Wire Notes Line
 	19900 -350 19900 5650
 Wire Notes Line
 	19900 2650 23850 2650
-Wire Wire Line
-	7700 3150 7450 3150
-Wire Wire Line
-	7450 3150 7450 2750
-Wire Wire Line
-	7450 2750 7700 2750
 NoConn ~ 7700 1750
 NoConn ~ 7700 1850
 NoConn ~ 9900 1250
@@ -363,7 +351,7 @@ $EndComp
 Wire Wire Line
 	1000 3350 1200 3350
 Wire Wire Line
-	550  4050 1200 4050
+	1150 4050 1200 4050
 Wire Wire Line
 	1200 4150 1200 4250
 Text Label 1200 4250 2    50   ~ 0
@@ -1691,8 +1679,6 @@ F 3 "" H 4250 3900 50  0001 C CNN
 	1    4250 3900
 	1    0    0    -1  
 $EndComp
-Text Label 4750 3500 2    50   ~ 0
-DAC_SDOUT
 NoConn ~ 4750 4300
 NoConn ~ 4750 4200
 NoConn ~ 4750 1750
@@ -1738,8 +1724,6 @@ $EndComp
 Wire Notes Line
 	3800 5500 3800 500 
 Wire Notes Line
-	7000 4750 11200 4750
-Wire Notes Line
 	7100 5700 11300 5700
 Wire Notes Line
 	7000 500  7000 6550
@@ -1749,17 +1733,6 @@ Wire Wire Line
 	850  3300 850  3750
 Wire Wire Line
 	850  3750 1200 3750
-$Comp
-L Device:R R2
-U 1 1 5F5296C2
-P 550 3150
-F 0 "R2" H 550 3000 50  0000 L CNN
-F 1 "4.7k" V 550 3050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 480 3150 50  0001 C CNN
-F 3 "~" H 550 3150 50  0001 C CNN
-	1    550  3150
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5F63B90C
@@ -2064,16 +2037,11 @@ Wire Wire Line
 	1000 3000 850  3000
 Connection ~ 850  3000
 Wire Wire Line
-	550  3300 550  4050
-Wire Wire Line
 	700  3950 1200 3950
 Wire Wire Line
 	700  3300 700  3950
 Wire Wire Line
-	550  3000 700  3000
-Wire Wire Line
 	700  3000 850  3000
-Connection ~ 700  3000
 $Comp
 L Device:R R1
 U 1 1 5F517C04
@@ -2114,5 +2082,89 @@ ENC1B
 Text Label 7700 3050 2    49   ~ 0
 ENC1SW
 NoConn ~ 9900 2650
-NoConn ~ 9900 2750
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 5F865698
+P 8400 4450
+F 0 "J3" V 8272 4262 50  0000 R CNN
+F 1 "Conn_01x02" V 8363 4262 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4450 50  0001 C CNN
+F 3 "~" H 8400 4450 50  0001 C CNN
+	1    8400 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5F866946
+P 7700 4450
+F 0 "J1" V 7572 4262 50  0000 R CNN
+F 1 "Conn_01x02" V 7663 4262 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7700 4450 50  0001 C CNN
+F 3 "~" H 7700 4450 50  0001 C CNN
+	1    7700 4450
+	-1   0    0    -1  
+$EndComp
+Text Label 7950 4450 0    49   ~ 0
+ADC_SCK
+Text Label 9900 2450 0    49   ~ 0
+MISO1
+Wire Wire Line
+	7900 4350 7950 4350
+Wire Wire Line
+	7900 4550 7950 4550
+Wire Wire Line
+	8600 4350 8650 4350
+Wire Wire Line
+	8600 4550 8650 4550
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5F88EBDB
+P 8400 3800
+F 0 "J2" V 8272 3612 50  0000 R CNN
+F 1 "Conn_01x02" V 8363 3612 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 3800 50  0001 C CNN
+F 3 "~" H 8400 3800 50  0001 C CNN
+	1    8400 3800
+	-1   0    0    -1  
+$EndComp
+Text Label 8600 3800 0    49   ~ 0
+MISO2
+Text Label 8600 3900 0    49   ~ 0
+SCK2
+Text Notes 8250 3700 0    49   ~ 0
+if you are using SPI2 for ADC:\nconnect MISO2 to pin 54 \nconnect SCK2 to pin 49\n(underneath teensy 4.1)
+Text Label 7950 4550 0    49   ~ 0
+SCK2
+Wire Wire Line
+	7900 4450 7950 4450
+Text Label 7950 4350 0    49   ~ 0
+DAC_SCK
+Text Label 8650 4550 0    49   ~ 0
+MISO2
+Text Label 8650 4350 0    49   ~ 0
+MISO1
+Text Notes 7700 4250 0    49   ~ 0
+Select SPI1 for ADC to use SPI1 (share with DAC)\nSelect SPI2 for ADC to use SPI2 (share with flash mem on T4.1 underside)
+Text Notes 7450 4400 0    49   ~ 0
+SPI1
+Text Notes 7450 4600 0    49   ~ 0
+SPI2
+Wire Wire Line
+	9900 2950 9950 2950
+Text Label 1150 4050 2    49   ~ 0
+ADC_RANGE
+Text Label 9950 2850 0    49   ~ 0
+ADC_RANGE
+Wire Wire Line
+	9900 2850 9950 2850
+Wire Notes Line
+	7000 4750 11200 4750
+NoConn ~ 4750 3500
+Text Label 7700 2750 2    49   ~ 0
+DAC_SCK
+Wire Wire Line
+	9900 2750 9950 2750
+NoConn ~ 9900 3150
+NoConn ~ 7700 3150
+NoConn ~ 9900 1950
 $EndSCHEMATC
