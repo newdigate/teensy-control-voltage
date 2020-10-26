@@ -2070,7 +2070,7 @@ Text Label 7700 2950 2    49   ~ 0
 ENC1B
 Text Label 7700 3050 2    49   ~ 0
 ENC1SW
-NoConn ~ 9900 2650
+NoConn ~ 9900 2450
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 5F865698
@@ -2095,7 +2095,7 @@ F 3 "~" H 7700 4450 50  0001 C CNN
 $EndComp
 Text Label 7950 4450 0    49   ~ 0
 ADC_SCK
-Text Label 9900 2450 0    49   ~ 0
+Text Label 9950 2650 0    49   ~ 0
 MISO1
 Wire Wire Line
 	7900 4350 7950 4350
@@ -2167,4 +2167,6 @@ F 3 "~" H 4200 5250 50  0001 C CNN
 	1    4200 5250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9900 2650 9950 2650
 $EndSCHEMATC
