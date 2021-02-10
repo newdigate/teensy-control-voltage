@@ -37,7 +37,7 @@
          offset="0"
          id="stop20467" />
       <stop
-         style="stop-color:#666666;stop-opacity:0;"
+         style="stop-color:#feffff;stop-opacity:1"
          offset="1"
          id="stop20469" />
     </linearGradient>
@@ -339,8 +339,8 @@
      inkscape:zoom="0.66267953"
      inkscape:cx="550.43133"
      inkscape:cy="239.28247"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-x="1"
+     inkscape:window-y="26"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg10388"
      fit-margin-top="0"
