@@ -12,7 +12,7 @@
 
 extend a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board") with peripherals to interface with eurorack modular equipment. 
 
-<img src='docs/teensy-control-voltage.svg' width='400px'/> 
+<img src='docs/teensy-control-voltage.svg' width='200px'/> 
 
 <img src='docs/teensy-eurorack.svg' width='800px'/>
 <img src='docs/teensy-eurorack-breakout.svg' width='800px'/>
