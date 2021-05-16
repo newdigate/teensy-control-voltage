@@ -25,7 +25,7 @@ extend a [teensy 4.1](https://www.pjrc.com/store/teensy40.html "teensy 4.1 board
   * microSD card socket, 
   * USB host/device, 
   * midi in/out, 
-  * knobs (4 x pots, 3 x encoders w/switch)
+  * 1 x encoders w/switch
 * **panel:** 14HP aluminium panel mounted for eurorack case
 * **programability**: 
   * write arduino compatible c/c++ firmware & program using arduino/teensyduino
